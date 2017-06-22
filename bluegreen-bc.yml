@@ -4,6 +4,7 @@ metadata:
   labels:
     app: bluegreen
   name: bluegreen
+  pipeline.alpha.openshift.io/uses: '[{"name": "bluegreen", "kind": "DeploymentConfig"}]'
 spec:
   output:
     to:
